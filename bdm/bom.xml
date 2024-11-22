@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0" productVersion="8.0.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.BusinessTrip">
+            <fields>
+                <field type="STRING" length="255" name="userName" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="email" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="fromDate" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="toDate" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="countryTo" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="requirements" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="comment" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="continent" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="population" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="timeZone" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="com.company.model.CountryInfo">
+            <fields>
+                <field type="STRING" length="255" name="capital" nullable="true" collection="false">
+                    <description>Nazwa stolicy</description>
+                </field>
+                <field type="STRING" length="255" name="region" nullable="true" collection="false">
+                    <description>Region świata/kontynent&#13;
+</description>
+                </field>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
